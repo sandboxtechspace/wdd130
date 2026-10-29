@@ -7,7 +7,7 @@
   // Editor settings
   "editor.formatOnSave": true,
   "editor.formatOnPaste": true,
-  "editor.defaultFormatter": "vscode.html-language-features",
+  "editor.defaultFormatter": null,
   "editor.minimap.enabled": false,
   "editor.linkedEditing": true,
   "editor.quickSuggestions": {
@@ -60,5 +60,6 @@
   "chat.includeReferencedInstructions": true,
   "chat.useAgentsMdFile": true,
   // limit Intellisense help in the terminal
-  "terminal.integrated.initialHint": false
+  "terminal.integrated.initialHint": false,
+  "editor.wordWrap": "on"
 }
