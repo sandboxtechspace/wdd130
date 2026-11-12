@@ -8,27 +8,48 @@
 
 /* ID #main-nav {...} Applies to the one element with the "main-nav" id value */
 
+:root {
+    /* Colors */
+    --primary-color: darkblue;
+    --text-color: #333;
+    --white-color: white;
+    --border-color: black;
+    --light-background: #eee;
+    --shadow-color: gray;
+
+    /* Sizes and spacing */
+    --standard-padding: 10px;
+    --image-padding: 2px;
+    --border-width: 1px;
+    --image-width: 150px;
+    --aside-image-width: 200px;
+    --main-width: 840px;
+    --aside-width: 20rem;
+    --standard-margin: 1rem;
+    --footer-margin: 15px;
+}
+
 nav {
-    background-color: darkblue;
-    padding: 10px;
+    background-color: var(--primary-color);
+    padding: var(--standard-padding);
 }
 
 nav a {
-    color: white;
+    color: var(--white-color);
     display: block;
     padding: 20px;
 }
 
 h1 {
-    color: darkblue;
+    color: var(--primary-color);
 }
 
 img {
-    width: 150px;
+    width: var(--image-width);
     height: auto;
-    border: 1px solid black;
-    padding: 2px;
-    box-shadow: 0 0 30px gray;
+    border: var(--border-width) solid var(--border-color);
+    padding: var(--image-padding);
+    box-shadow: 0 0 30px var(--shadow-color);
 }
 
 p {
@@ -36,35 +57,34 @@ p {
 }
 
 main {
-    max-width: 840px;
+    max-width: var(--main-width);
 }
 
 aside {
-    width: 20rem;
-    margin: 1rem;
-    border: 1px solid rgb(0 0 0 / 0.2);
-    /* 1️⃣ */
-    padding: 1rem;
-    background-color: #eee;
-    color: #333;
+    width: var(--aside-width);
+    margin: var(--standard-margin);
+    border: var(--border-width) solid rgb(0 0 0 / 0.2);
+    padding: var(--standard-margin);
+    background-color: var(--light-background);
+    color: var(--text-color);
     text-align: center;
 }
 
 aside img {
-    width: 200px;
+    width: var(--aside-image-width);
     height: auto;
 }
 
 main img {
-    width: 150px;
+    width: var(--image-width);
     height: auto;
-    border: 1px solid black;
-    padding: 2px;
-    box-shadow: 0 0 30px gray;
+    border: var(--border-width) solid var(--border-color);
+    padding: var(--image-padding);
+    box-shadow: 0 0 30px var(--shadow-color);
 }
 
 footer {
-    margin-top: 15px;
-    border-top: 1px solid #000;
+    margin-top: var(--footer-margin);
+    border-top: var(--border-width) solid var(--border-color);
     text-align: center;
 }
