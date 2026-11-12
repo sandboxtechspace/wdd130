@@ -1,3 +1,6 @@
+/* CSS image rule for all of your work in this  class. */
+/* img {max-width: 100%;  height: auto;} */
+
 main {
     width: 75vw;
     margin: 1rem auto;
@@ -20,6 +23,7 @@ p {
 footer {
     border-top: 1px solid #555;
     padding-top: 5px;
+    /*clear: both;*/
     /* Uncomment the declaration below and observe the results. */
 
     /* clear: both; */

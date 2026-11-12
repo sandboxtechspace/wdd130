@@ -1,3 +1,13 @@
+/* this is how we write a comment in CSS */
+
+/* Universal * {...} Applies to all elements */
+
+/* Type(Element) h1 {...} Applies to all <h1 > elements */
+
+/* Class .highlight {...} Applies to all elements with the "highlight" class value */
+
+/* ID #main-nav {...} Applies to the one element with the "main-nav" id value */
+
 nav {
     background-color: darkblue;
     padding: 10px;
