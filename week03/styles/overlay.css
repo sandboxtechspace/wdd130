@@ -21,13 +21,13 @@ h1 {
     text-shadow: 3px 3px 5px #777;
 }
 
-.herodiv {
+.hero {
     margin: 10px auto;
     /* position: relative; */
     /* If removed, what happens? */
 }
 
-.herodiv img {
+.hero img {
     width: 100%;
     height: 300px;
     object-fit: cover;
