@@ -3,10 +3,14 @@
     --primary-color: #075985;
     --secondary-color: #f4a261;
     --accent1-color: #164e63;
-    --accent2-color: #e0f2fe;
-
+    --accent2-color: #e9c46a;
     --heading-font: Georgia, "Times New Roman", "Georgia", serif;
     --body-font: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: var(--accent2-color)
 }
 
 /* CSS Reset */
@@ -31,12 +35,18 @@ footer {
 }
 
 /* Header */
-header {
+/*header {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 15px;
     background-color: var(--primary-color);
+}*/
+
+h1,
+h2 {
+    font-family: var(--heading-color);
+    color: var(--primary-color);
 }
 
 header img {
@@ -45,29 +55,24 @@ header img {
 }
 
 /* Navigation */
-nav ul {
+/*nav ul {
     display: flex;
     list-style: none;
     gap: 25px;
-}
+}*/
 
-nav a {
+/*nav a {
     text-decoration: none;
     color: white;
     font-weight: bold;
     padding: 10px;
-}
+}*/
 
-nav a:hover {
+/*nav a:hover {
     color: var(--secondary-color);
-}
+}*/
 
 /* Headings */
-h1,
-h2 {
-    font-family: var(--heading-font);
-    color: var(--primary-color);
-}
 
 /* General spacing */
 nav,
@@ -83,7 +88,7 @@ article {
     position: relative;
 }
 
-.hero > img {
+.hero img {
     display: block;
     width: 100%;
     height: auto;
@@ -92,33 +97,49 @@ article {
 /* Hero heading */
 .hero h1 {
     position: absolute;
-    top: 20px;
+    top: 15px;
+    left: 0;
     width: 100%;
-    padding: 16px;
+    padding: 12px;
     text-align: center;
-    opacity: 0.7;
-    background-color: var(--accent1-color);
-    color: #fff;
+    background-color: rgba(22, 78, 99, 0.85);
+    color: white;
+    opacity: 0.9;
+    font-size: 28px;
 }
 
 /* Hero article */
 .hero article {
     position: absolute;
-    bottom: 20px;
-    left: 20px;
-    width: 75%;
-    background-color: rgba(255, 255, 255, 0.9);
-    color: var(--accent1-color);
+    top: 74px;
+    left: 10px;
+    width: calc(100% - 20px);
+    margin: 0;
     padding: 15px;
+    background-color: #f0ca6b;
+    color: #111111;
+    overflow: auto;
 }
 
+/* clients image */
 .hero article img {
     float: right;
-    width: 125px;
+    width: 90px;
+    height: auto;
+    margin: 0 0 5px 12px;
+    border: 2px solid white;
+}
+
+/* article paragraph */
+.hero article p {
+    margin: 0;
+    padding: 5px;
+    line-height: 1.4;
+    color: #111111;
 }
 
 /* Sections */
-section {
+/*section {
     padding: 20px;
     text-align: center;
 }
