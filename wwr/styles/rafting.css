@@ -39,15 +39,6 @@ footer {
     margin: 0 auto;
 }
 
-/* Header */
-header {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    align-items: center;
-    padding: 20px;
-    background-color: var(--primary-color);
-}
-
 h1,
 h2 {
     font-family: var(--heading-font);
